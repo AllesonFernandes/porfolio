@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Alleson Fernandes</title>
+</head>
+
+<body data-theme="light">
+    <div id="messageDownload">Download realizado com sucesso</div>
+    <aside id="sidebar" class="sidebar">
+        <nav>
+            <svg id="close" class="close" onclick="closeSidebar()" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                <path
+                    d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z">
+                </path>
+            </svg>
+            <ul>
+                <li><a href="">Github</a></li>
+                <li><a href="">Linkedin</a></li>
+            </ul>
+        </nav>
+        <button id="downloadBtn" onclick="download()">Download CV <img src="/assets/icons/download.png" alt=""></button>
+        <button>Email</button>
+    </aside>
+    <header>
+        <svg id="menu" fill="currentColor" onclick="showSidebar()" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="50" height="50" viewBox="0 0 50 50">
+            <path
+                d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+            </path>
+        </svg>
+        <div class="toggle">
+            <span id="mode">Dark</span>
+            <input type="checkbox" id="check">
+            <label for="check" class="switch">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </header>
+    <main>
+        <section id="container-card">
+                    <img class="profile" src="/assets/img/perfil.jpeg" alt="">
+                    <h1>Alleson Fernandes</h1>
+                    <p><i>Fullstack Developer</i></p>
+        </section>
+        <section id="about-me">
+            <h1>Sobre mim</h1>
+            <p>Sou estudante de Sistemas para Internet, com foco em aplicações web fullstatck. Venho de uma trajetória
+                multidisciplinar que passa por Letras, Biologia e Suporte Técnico, mas foi na programação que encontrei
+                meu caminho — unindo lógica, design e impacto real.</p>
+        </section>
+        <section id="skills">
+            <div class="principle-card">
+                <div>
+                    <button class="skill-btn" onclick="changeCard('card1', this)">Hard Skills</button>
+                    <button class="skill-btn" onclick="changeCard('card2', this)">Soft Skills</button>
+                </div>
+                <div id="card1" class="card-skill ativo">
+                    <div class="mini-card-backend">
+                        
+                    </div>
+                </div>
+                <div id="card2" class="card-skill">
+                    <ul>
+                        <li>Escuta ativa</li>
+                        <li>Escrita profissional</li>
+                        <li>Comunicação clara e objetiva</li>
+                        <li>Comunicação não violenta</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div>
+                <h1>Meus projetos</h1>
+                <p>Conheça meus últimos projetos</p>
+            </div>
+            <div>
+                <button>Back-end</button>
+                <button>Front-end</button>
+                <button>Design UX/UI</button>
+            </div>
+        </section>
+    </main>
+    <script src="/main.js"></script>
+</body>
+
+</html>
