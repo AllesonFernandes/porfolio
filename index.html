@@ -10,89 +10,121 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/assets/style.css">
-    <title>Alleson Fernandes</title>
+    <meta name="theme-color" content="#004475">
+    <title>Portfólio | Alleson Fernandes</title>
 </head>
 
-<body data-theme="light">
-    <div id="messageDownload">Download realizado com sucesso</div>
-    <aside id="sidebar" class="sidebar">
+<body>
+    <header>
         <nav>
-            <svg id="close" class="close" onclick="closeSidebar()" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-                <path
-                    d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z">
-                </path>
-            </svg>
             <ul>
-                <li><a href="">Github</a></li>
-                <li><a href="">Linkedin</a></li>
+                <li><a href="#about-me">Sobre mim</a></li>
+                <li><a href="#hardskill">Hard Skills</a></li>
+                <li><a href="#projects">Projetos</a></li>
             </ul>
         </nav>
-        <button id="downloadBtn" onclick="download()">Download CV <img src="/assets/icons/download.png" alt=""></button>
-        <button>Email</button>
-    </aside>
-    <header>
-        <svg id="menu" fill="currentColor" onclick="showSidebar()" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="50" height="50" viewBox="0 0 50 50">
-            <path
-                d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
-            </path>
-        </svg>
-        <div class="toggle">
-            <span id="mode">Dark</span>
-            <input type="checkbox" id="check">
-            <label for="check" class="switch">
-                <span class="slider"></span>
-            </label>
-        </div>
     </header>
     <main>
-        <section id="container-card">
-                    <img class="profile" src="/assets/img/perfil.jpeg" alt="">
-                    <h1>Alleson Fernandes</h1>
-                    <p><i>Fullstack Developer</i></p>
+        <section id="presentation">
+            <div class="text">
+                <h1>Desenvolvedor Fullstack</h1>
+                <p>Seja bem vindo! Me chamo Alleson Fernandes</p>
+            </div>
+            <div>
+                <img class="profile-photo" src="/assets/img/perfil.jpeg" alt="foto de perfil">
+            </div>
         </section>
         <section id="about-me">
-            <h1>Sobre mim</h1>
-            <p>Sou estudante de Sistemas para Internet, com foco em aplicações web fullstatck. Venho de uma trajetória
-                multidisciplinar que passa por Letras, Biologia e Suporte Técnico, mas foi na programação que encontrei
-                meu caminho — unindo lógica, design e impacto real.</p>
+            <h1>Um pouco sobre mim...</h1>
+            <p>Sou estudante de <i>Sistemas para Internet</i> <strong>(UNICAP)</strong>, apaixonado por programação e
+                por desenvolver sistemas que facilitem o nosso dia a dia. Tenho interesse em criar interfaces modernas e
+                atraentes.</p>
         </section>
-        <section id="skills">
-            <div class="principle-card">
-                <div>
-                    <button class="skill-btn" onclick="changeCard('card1', this)">Hard Skills</button>
-                    <button class="skill-btn" onclick="changeCard('card2', this)">Soft Skills</button>
+        <section id="hardskill">
+            <div>
+                <h1>Hard Skills</h1>
+            </div>
+            <div class="card-hardskill">
+                <div class="card">
+                    <img class="img-card" src="/assets/img/html.png" alt="html">
+                    <span class="name-card">HTML</span>
                 </div>
-                <div id="card1" class="card-skill ativo">
-                    <div class="mini-card-backend">
-                        
+                <div class="card">
+                    <img class="img-card" src="/assets/img/css.png" alt="css">
+                    <span class="name-card">CSS</span>
+                </div>
+                <div class="card">
+                    <img class="img-card" src="/assets/img/js.png" alt="javascript">
+                    <span class="name-card">JavaScript</span>
+                </div>
+                <div class="card">
+                    <img class="img-card" src="/assets/img/java.png" alt="java">
+                    <span class="name-card">Java</span>
+                </div>
+                <div class="card">
+                    <img class="img-card" src="/assets/img/spring.png" alt="springboot">
+                    <span class="name-card">Spring Boot</span>
+                </div>
+                <div class="card">
+                    <img class="img-card" src="/assets/img/csharp.png" alt="csharp">
+                    <span class="name-card">C#</span>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div>
+                <h1>Projetos</h1>
+            </div>
+            <div class="cards">
+                <div class="card-weather">
+                    <div class="title">
+                        <h3>Weather</h3>
+                        <div class="tool">
+                            React.js
+                        </div>
                     </div>
+                    <p>Consulta de clima atual via OpenWeather, com React + Tailwind e layout responsivo mobile-first.
+                    </p>
+                    <a class="access" href="https://weather-two-swart.vercel.app/" target="_blank">Acessar</a>
                 </div>
-                <div id="card2" class="card-skill">
-                    <ul>
-                        <li>Escuta ativa</li>
-                        <li>Escrita profissional</li>
-                        <li>Comunicação clara e objetiva</li>
-                        <li>Comunicação não violenta</li>
-                    </ul>
+                <div class="card-todolist">
+                    <div class="title">
+                        <h3>TodoList</h3>
+                        <div class="tool">
+                            React.js
+                        </div>
+                    </div>
+                    <p>Projeto desenvolvido como prática de estudos em React.js. Permite adicionar, filtrar, concluir
+                        (com
+                        destaque visual) e remover tarefas de forma interativa. Estilizado com Tailwind CSS e
+                        estruturado
+                        com componentes reutilizáveis.</p>
+                    <a class="access" href="https://todolist-sigma-taupe.vercel.app/" target="_blank">Acessar</a>
+                </div>
+                <div id="card-control" class="card-control">
+                    <div class="over">
+                        <span>Em breve</span>
+                    </div>
+                    <div class="title">
+                        <h3>Controle Financeiro</h3>
+                        <div class="tool">
+                            Spring Boot
+                        </div>
+                    </div>
+                    <p>Projeto desenvolvido como prática de estudos com Spring Boot. API em desenvolvimento permite
+                        fazer o
+                        controle financeiro.</p>
+                    <a id="disable" href="" target="_blank">Acessar</a>
                 </div>
             </div>
 
         </section>
-        <section>
-            <div>
-                <h1>Meus projetos</h1>
-                <p>Conheça meus últimos projetos</p>
-            </div>
-            <div>
-                <button>Back-end</button>
-                <button>Front-end</button>
-                <button>Design UX/UI</button>
-            </div>
-        </section>
     </main>
-    <script src="/main.js"></script>
+    <footer>
+        <a href="https://github.com/AllesonFernandes" target="_blank"><img src="/assets/icons/github.svg" alt="github"></a>
+        <a href="https://www.linkedin.com/in/allesonfernandes/" target="_blank"><img src="/assets/icons/linkedin.svg" alt="linkedin"></a>
+    </footer>
+
 </body>
 
 </html>
